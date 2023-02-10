@@ -16,7 +16,7 @@ Usage:
 
 Examples:
 dotenv -- YOUR_COMMAND --YOUR-FLAG
-doten run --command "YOUR_COMMAND && YOUR_OTHER_COMMAND"
+dotenv --command "YOUR_COMMAND && YOUR_OTHER_COMMAND"
 
 Flags:
   -c, --command string      command to run

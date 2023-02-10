@@ -13,7 +13,7 @@ func NewRootCmd() *cobra.Command {
 		Use:   "dotenv [flags] command [args...]",
 		Short: "Run a command with env vars injected from one or more .env files",
 		Example: `dotenv -- YOUR_COMMAND --YOUR-FLAG
-doten run --command "YOUR_COMMAND && YOUR_OTHER_COMMAND"`,
+dotenv --command "YOUR_COMMAND && YOUR_OTHER_COMMAND"`,
 		PreRunE: func(cmd *cobra.Command, args []string) error {
 			if cmd.Flags().Changed("completion") {
 				return nil
